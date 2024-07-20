@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="timer-app">
+    <!-- Timer Input Section -->
+    <div class="timer-input-section">
+      <h2>Set Timer</h2>
+      <div class="timer-input">
+        <input type="number" id="hours" placeholder="Hours" min="0">
+        <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+        <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+      </div>
+      <button id="start-timer-btn">Start New Timer</button>
+    </div>
+
+    <!-- Active Timers Display Section -->
+    <div class="active-timers-section">
+      <h2>Active Timers</h2>
+      <div id="active-timers"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
